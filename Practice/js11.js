@@ -13,3 +13,21 @@ console.log(
     }
   }),
 );
+
+console.log("-------------------------------------------");
+
+const products = [
+  { id: 1, name: "Laptop", price: 50000 },
+  { id: 2, name: "Mouse", price: 1000 },
+  { id: 3, name: "Keyboard", price: 2000 },
+];
+
+console.log(
+  products.map((p) => {
+    if (p.id === 2) {
+      return { ...p, price: 1200 };
+    } else {
+      return p;
+    }
+  }),
+);
